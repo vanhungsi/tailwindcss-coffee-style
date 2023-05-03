@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Document</title>
+    <link rel=icon href="./img/favicon/pitr_Coffee_cup_icon.png" sizes="16x16">
+    <title>Coffee Mugs</title>
     <link href="./output.css" type="text/css" rel="stylesheet">
+    <script src="./main.js" type="text/javascript" async></script>
 </head>
 <body>
   <div id="root">
-    <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
+    <div class="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
       <header class="py-6 mx-10">
-        <nav class="flex flex-row justify-between items-center">
+        <nav class="flex flex-row justify-between items-center relative">
           <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
             CoffeeStyle.
           </div>
-          <ul class="basis-3/6 flex items-center justify-end gap-8 uppercase text-sm text-gray-500 font-medium">
+          <ul id="vhs-top-menu" class="basis-3/6 hidden vhs-topmenu-expanded lg:flex lg:items-center lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium">
             <li class="vhs-top-menu-item">
               <a href="#" class="">Home</a>
             </li>
             <li class="vhs-top-menu-item">
-              <a href="#" class="">Our Products</a>
+              <a href="#" class="">Products</a>
             </li>
             <li class="vhs-top-menu-item">
               <a href="#" class="">Blog</a>
@@ -38,7 +40,7 @@
         
           </ul>
           
-          <ul class="basis-1/6 flex justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
+          <ul class="basis-3/6 flex justify-end lg:justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
             <li class="vhs-top-menu-item">
               <a href="#" class="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="vhs-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -50,7 +52,15 @@
               </a>
             </li>
           </ul>
-        </nav>
+          <div class="basis-1/6 lg:hidden flex items-center cursor-pointer px-2 sm:px-4">
+            <svg id="vhs-toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            
+          </div>
+            </li>
+          </li>
+          </nav>
       </header>
       <main>
         <div class="slider">
@@ -71,8 +81,8 @@
         <div class="lifestyle-stories">
           lifestyle-stories
         </div>
-        <div class="subcribe-us">
-          subcribe-us
+        <div class="subscribe-us">
+          subscribe-us
         </div>
         
       </main>

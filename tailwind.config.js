@@ -3,7 +3,13 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
-      "light-coffee": "#C89F94"
+      fontFamily: {
+        Karla: ['Karla', 'sans-serif']
+      },
+      
+      color:{
+      'light-coffee': '#C89F94'
+    }
     },
   },
   plugins: [],
